@@ -1,4 +1,4 @@
-# Welcome to your new blog
+# Welcome to my new blog
 
 If you see this page, that means it's working
 
