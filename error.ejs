@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= info.title %> - Error <%= error %></title>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <%- `<meta property="og:title" content="${info.title} - Home">` %>
+    <%- `<meta property="twitter:title" content="${info.title} - Home">` %>
+    <%- `<meta property="og:description" content="${info.description}">` %>
+    <%- `<meta property="twitter:description" content="${info.description}">` %>
+    <%- `<meta property="org:url" content="${info.host}/">` %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+<main>
+    <h1>Somehing went wrong
+        <small>(Error <%= error %>)</small>
+    </h1>
+    It means the resource you're trying to access is unavailable right now.<br>
+    We're terribly sorry that you encountered this error.<br><br>
+    <a href="/">Back to home</a>
+    <%- include('footer'); %>
+</main>
+</body>
+</html>
