@@ -1,4 +1,4 @@
-# So, you want to create your own blog ?
+# So, you want to create your own blog?
 
 ![thumbnail](thumbnail.jpg)
 *Photo by [Matthieu Joannon](https://unsplash.com/@matt_j) on Unsplash*
