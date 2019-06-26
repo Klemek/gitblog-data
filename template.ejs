@@ -29,6 +29,8 @@
         <span class="time"><span>Published on</span> <%= article.year + '-' + article.month + '-' + article.day %></span>
     </div>
     <div id="text"><%- article.content %></div>
+    <div id="signature"><b>Klemek</b><br><i>Junior software engineer</i>
+    </div>
     <br>
     <a href="#top">Go to top</a> - <a href="/">Back to home</a> - <%- `<a class="share-button" href="http://twitter.com/share?text=${encodeURIComponent('"'+article.title+'"')}&url=${info.host + article.url}" target="_blank">
         <i class="fab fa-twitter-square"></i>&nbsp;Tweet this

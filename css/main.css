@@ -54,6 +54,13 @@ pre {
     padding: 10px 16px;
 }
 
+:not(pre) > code{
+    padding:0.25em 0.5em;
+    border-radius:0.25em;
+    background:#DDD;
+    font-size:90%;
+}
+
 blockquote {
     border-left: 0.5em solid #ccc;
     padding-left: 1em;
@@ -155,4 +162,10 @@ div.article img{
 #text img {
     max-width: 100%;
     height: auto;
+}
+
+#signature{
+    text-align:right;
+    color:#333;
+    line-height: 1em;
 }
