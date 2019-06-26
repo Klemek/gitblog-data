@@ -146,7 +146,6 @@ div.article img{
 
 #text {
     text-align: justify;
-    hyphens: auto;
 }
 
 #text li, #text table, #text blockquote {
