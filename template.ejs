@@ -17,8 +17,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <link rel="stylesheet" type="text/css" href="/prism.css">
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/fa-all.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/prism.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 <body>
 <main class="article">
@@ -29,7 +30,9 @@
     </div>
     <div id="text"><%- article.content %></div>
     <br>
-    <a href="#top">Go to top</a> - <a href="/">Back to home</a>
+    <a href="#top">Go to top</a> - <a href="/">Back to home</a> - <%- `<a class="share-button" href="http://twitter.com/share?text=${encodeURIComponent('"'+article.title+'"')}&url=${info.host + article.url}" target="_blank">
+        <i class="fab fa-twitter-square"></i>&nbsp;Tweet this
+        </a> `%>
     <%- include('footer'); %>
 </main>
 </body>
