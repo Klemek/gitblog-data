@@ -13,12 +13,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="/css/fa-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 <main>
-    <h1><%= info.title %></h1>
+    <h1 class="title"><%= info.title %></h1>
     <%= info.description %>
     <h2>Articles in this blog :</h2>
     <% articles.forEach((article) => { %>
