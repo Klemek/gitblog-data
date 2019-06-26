@@ -5,7 +5,7 @@
 
 ***
 
-As my daily navigation through [Hacker News](https://news.ycombinator.com) tends to increase,  I noticed that most developers doesn't rely on major blog services like Medium. Instead, they use other means to host their thoughts on their own website  and, as I was reading a lot articles on these types of platforms, I felt this questionable need to create my own.
+As my daily navigation through [Hacker News](https://news.ycombinator.com) tends to increase,  I noticed that most developers don't rely on major blog services like Medium. Instead, they use other means to host their thoughts on their own website  and, as I was reading a lot articles on these types of platforms, I felt this questionable need to create my own.
 
 > Fine, but is it worth our while? Do you have so many stories you need to share?
 
