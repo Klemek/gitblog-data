@@ -5,7 +5,7 @@
 
 ***
 
-As my daily navigation through [Hacker News](https://news.ycombinator.com) tend to increase,  I noticed that most developers doesn't rely on major blog services like Medium. Instead, they use other means to host on their own website their thoughts and, as I was reading a lot articles on this type of platforms, I felt this questionable need to create my own.
+As my daily navigation through [Hacker News](https://news.ycombinator.com) tends to increase,  I noticed that most developers doesn't rely on major blog services like Medium. Instead, they use other means to host their thoughts on their own website  and, as I was reading a lot articles on these types of platforms, I felt this questionable need to create my own.
 
 > Fine, but is it worth our while? Do you have so many stories you need to share?
 
@@ -20,7 +20,7 @@ First, let's define what a blog is:
 2. A page per article
 3. A method to add new articles or edit previous ones
 
-As I wanted simplicity, I imagined a blog running on this 3 ideas:
+As I wanted simplicity, I imagined a blog running on these 3 ideas:
 1. Deliver HTML pages from predefined templates
 2. Use a simple language to define the articles' content
 3. Use versioning to edit the blog articles
@@ -34,30 +34,35 @@ Translated into technologies, my choices can be summarized with:
 
 Consider the following:
 
-_Step One:_ You have your local repository `gitblog-data` connected to your online GitHub one and you create a new article under the current date folder like `2019/06/26` where you add a new `index.md` file. On this Markdown document you write your desired content and make a title with the usual single pound sign (#). You might even want to add a thumbnail with an image simply labelled `thumbnail`.
+**Step One:**  
+You have your local repository `gitblog-data` connected to your online GitHub one and you create a new article under the current date folder like `2019/06/26` where you add a new `index.md` file. On this Markdown document you write your desired content and make a title with the usual single pound sign (#). You might even want to add a thumbnail with an image simply labelled `thumbnail`.
 
-_Step Two:_ When you have finished writing your article you normally update your online repository. As your git CLI process your `git push origin master`, GitHub will receive the data and trigger a webhook connected to your website endpoint with the correct signature. This will also trigger a `git pull origin master` on the remote data folder and refresh the article list available on your website.
+**Step Two:**  
+When you have finished writing your article you normally update your online repository. As your git CLI process your `git push origin master`, GitHub will receive the data and trigger a webhook connected to your website endpoint with the correct signature. This will also trigger a `git pull origin master` on the remote data folder and refresh the article list available on your website.
 
-_Step Three:_ Accessing your home page will show you the correct article list incorporated into your custom template with correct links to access each. Static resources are also loaded along side your templates in the data folder as the root directory.
+**Step Three:**  
+Accessing your home page will show you the correct article list incorporated into your custom template with correct links to access each. Static resources are also loaded along side your templates in the data folder as the root directory.
 
-_Step Four:_ At the article's URL, you can find it formatted from Markdown to HTML then fitted into a template that, for example, add a footer or a "share this article" button.
+**Step Four:**  
+At the article's URL, you can find it formatted from Markdown to HTML then fitted into a template that, for example, adds a footer or a "share this article" button.
 
-_Step Five:_ Now you now want to change some image or fix a typo in your article. You can simply access and edit from your local repository, or even better: directly from GitHub in file edition where you can preview your Markdown changes (This article is written using this method)
+**Step Five:**  
+Now you now want to change some image or fix a typo in your article. You can simply access and edit from your local repository, or even better: directly from GitHub in file edition where you can preview your Markdown changes (This article is written using this method)
 
 And there you go, a simple yet complete tool to share your thought on your own server. At least on paper. 3 days of work and ~700 lines of code (not including unit tests) later I had this project up and running: [GitBlog.md](https://github.com/Klemek/GitBlog.md/) featuring:
 
-* Markdown to HTML rendering with Showdown
+* Markdown to HTML rendering with [Showdown](http://showdownjs.com/)
 * Fully customizable templates and view engine
 * RSS feed endpoint
 * Secured Git webhook endpoint
-* Code highlighting with server-side Prism
-* LaTeX math equations with server-side MathJax
-* UML diagrams with server-side PlantUML
+* Code highlighting with server-side [Prism](https://prismjs.com/)
+* LaTeX math equations with server-side [MathJax](https://www.mathjax.org/)
+* UML diagrams with server-side [PlantUML](plantuml.com/)
 
 All of it running on a small yet powerful NodeJS server.
 
 > Nice, but will this tool be used by others or is it just yours?
 
-I don't really care. I made it with a lot of configuration possibilites, so others might want to use it for its simplicity. You may want to tell me it's design is not that eye-catching yet it's only a reflect of my own need of minimalism (and lack of designing skills). You can imagine a full bootstrapped version with animations and stuff and it would be totally doable with this project.
+I don't really care. I made it with a lot of configuration possibilities, so others might want to use it for its simplicity. You may want to tell me its design is not that eye-catching yet it's only a reflect of my own need of minimalism (and lack of designing skills). You can imagine a full bootstrapped version with animations and stuff and it would be totally doable with this project.
 
 Anyway, I will use it personally as mentioned earlier and I hope to count you as my few yet meaningful readers.
