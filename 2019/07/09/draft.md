@@ -38,7 +38,7 @@ Ok, first things first, we will be working on an interpreted language, not a com
 * Error detection
 * Execution (if the last step was successful)
 
-By doing so, we don't need to deal with the ulgy task of throwing and handling exceptions.
+By doing so, we don't need to deal with the ugly task of throwing and handling exceptions.
 
 Looks like it's time to make some choices. For simplicity, we will impose the following:
 * Each line is a single code statement: no semi-colon for delimiting (like python)
