@@ -12,7 +12,7 @@ Several months ago, I was on this project named **Red Pineapple** with friends w
 * Allow users to use a known language with its own potential backdoors that could threaten our server.
 * Create our own limited but complete language.
 
-As you can guess, the third option was the one we did choose after all as we had the motivation and the energy to do it in 4 to 5 months. The goal was to generate math problems from templates written by teachers in a *not so complicated* language.
+The third option was the one that we eventually chose as we had the motivation and the energy to complete it in 4 to 5 months. The goal was to generate math problems from templates written by teachers in a *not so complicated* language.
 
 Back then, we didn't know there were tools to do that task from your own design and choices, but we were young and ignorant (we still are by the way) and nothing is more formative than doing it from scratch (keep repeating that to reassure your manager, 100% success rate).
 
