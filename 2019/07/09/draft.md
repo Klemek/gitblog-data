@@ -1,5 +1,8 @@
 # How to create a (slow) interpreter - Introduction
 
+![thumbnail](thumbnail.jpg)
+*Vue.js minified code highlight on Webstorm*
+
 Have you ever considered creating your own language ? With its own features and syntax ? If the answer is yes, maybe you should read another article where you can learn an efficient way of doing so. If you're here by curiosity, tighten your seatbelt and find a drink, we're going on a ride.
 
 ## How I got here
