@@ -16,7 +16,7 @@ The third option was the one that we eventually chose as we had the motivation a
 
 Back then, we didn't know there were tools to do that task from your own design and choices, but we were young and ignorant (we still are by the way) and nothing is more formative than doing it from scratch (keep repeating that to reassure your manager, 100% success rate).
 
-I took this task myself to let others handle front-end and back-end development of our service and because I was also eager to create something of my own. After the some months, here is what this language was doing:
+I took this task myself to let others handle front-end and back-end development of our service and because I was also eager to create something of my own. After some months, here is what this language was doing:
 * Variable attributions, conditions, loops
 * Formal expression computing and common math functions with [Giac/Xcas](https://www-fourier.ujf-grenoble.fr/~parisse/giac.html)
 * LaTeX expression output with variable injection
