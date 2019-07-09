@@ -3,14 +3,14 @@
 ![thumbnail](thumbnail.jpg)
 *Vue.js minified code highlight on Webstorm*
 
-Have you ever considered creating your own language ? With its own features and syntax ? If the answer is yes, maybe you should read another article where you can learn an efficient way of doing so. If you're here by curiosity, tighten your seatbelt and find a drink, we're going on a ride.
+Have you ever considered creating your own language ? With its own features and syntax ? If the answer is yes, maybe you should read another article where you can learn an efficient way of doing so. If you're here by curiosity, tighten your seatbelt and fetch a drink, we're going on a ride.
 
 ## How I got here
 
 Several months ago, I was on this project named **Red Pineapple** with friends where we had to make a choice between these 3 options:
-* make a full [scratch-like interface](https://en.wikipedia.org/wiki/Scratch_(programming_language)) to allow programming with building blocks
+* make a full [scratch-like interface](https://en.wikipedia.org/wiki/Scratch_(programming_language)) to allow programming with building blocks.
 * allow users to use a known language with its own potential backdoors that could threaten our server.
-* create our own limited but complete language
+* create our own limited but complete language.
 
 As you can guess, the third option was the one we did choose after all as we had the motivation and the energy to do it in 4 to 5 months. The goal was to generate math problems from templates written by teachers in a *not so complicated* language.
 
