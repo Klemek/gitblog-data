@@ -1,4 +1,4 @@
-# How to create an interpreter - Introduction
+# How to create a (slow) interpreter - Introduction
 
 Have you ever considered creating your own language ? With its own features and syntax ? If the answer is yes, maybe you should read another article where you can learn an efficient way of doing so. If you're here by curiosity, tighten your seatbelt and find a drink, we're going on a ride.
 
@@ -81,4 +81,4 @@ GCD(169, 585)
 
 I think we're good to go.
 
-See you next time for __How to create an interpreter - Part 1: Tokens__ (soon).
+See you next time for __How to create a (slow) interpreter - Part 1: Tokens__ (soon).
