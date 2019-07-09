@@ -14,7 +14,7 @@ As you can guess, the third option was the one we did choose after all as we had
 Back then, we didn't know there were tools to do that task from your own design and choices, but we were young and ignorant (we still are by the way) and nothing is more formative than doing it from scratch (keep repeating that to reassure your manager, 100% success rate).
 
 I took this task myself to let others handle front-end and back-end development of our service and because I was also eager to create something of my own. After the some months, here is what this language was doing:
-* Variable attributions, Conditions, loops
+* Variable attributions, conditions, loops
 * Formal expression computing and common math functions with [Giac/Xcas](https://www-fourier.ujf-grenoble.fr/~parisse/giac.html)
 * LaTeX expression output with variable injection
 * Custom ternary inside output
