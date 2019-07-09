@@ -7,16 +7,16 @@ Have you ever considered creating your own language ? With its own features and 
 
 ## How I got here
 
-Several months ago, I was on this project named **Red Pineapple** with friends where we had to make a choice between these 3 options:
+Several months ago, I was on this project named **Red Pineapple** with some friends where we had to make a choice between these 3 options:
 * Make a full [scratch-like interface](https://en.wikipedia.org/wiki/Scratch_(programming_language)) to allow programming with building blocks.
 * Allow users to use a known language with its own potential backdoors that could threaten our server.
 * Create our own limited but complete language.
 
 The third option was the one that we eventually chose as we had the motivation and the energy to complete it in 4 to 5 months. The goal was to generate math problems from templates written by teachers in a *not so complicated* language.
 
-Back then, we didn't know there were tools to do that task from your own design and choices, but we were young and ignorant (we still are by the way) and nothing is more formative than doing it from scratch (keep repeating that to reassure your manager, 100% success rate).
+Back then, we didn't know there were tools to perform that task from your own design and choices, but we were young and ignorant (we still are by the way) and nothing is more formative than doing it from scratch (keep repeating that to reassure your manager, 100% success rate).
 
-I took this task myself to let others handle front-end and back-end development of our service and because I was also eager to create something of my own. After some months, here is what this language was doing:
+I took this task myself to let others handle front-end and back-end development of our service and because I was also eager to create something of my own. After some months, here is what this language was capable of:
 * Variable attributions, conditions, loops
 * Formal expression computing and common math functions with [Giac/Xcas](https://www-fourier.ujf-grenoble.fr/~parisse/giac.html)
 * LaTeX expression output with variable injection
@@ -33,12 +33,12 @@ It will be close to the one mentioned before, but with far less features for the
 
 ## First step, syntax
 
-Ok, first things first, we will be working on an interpreted language, not a compiled one. The difference is simple : **we don't need to create a bytecode to be read by the computer**. In fact, it will be as simple as reading it from a human perspective : a cursor will jump along the lines and decide where to go next while a memory will retain variables known during the execution. There will be 2 major steps:
+Ok, first things first, we will be working on an interpreted language, not a compiled one. The difference is simple: **we don't need to create a bytecode to be read by the computer**. In fact, it will be as simple as reading it from a human perspective: a cursor will jump along the lines and decide where to go next while a memory will retain variables known during the execution. There will be 2 major steps:
 
 * Error detection
 * Execution (if the last step was successful)
 
-By doing so, we don't need to do the horrible task of throwing and handling exceptions.
+By doing so, we don't need to deal with the ulgy task of throwing and handling exceptions.
 
 Looks like it's time to make some choices. For simplicity, we will impose the following:
 * Each line is a single code statement: no semi-colon for delimiting (like python)
