@@ -39,12 +39,113 @@ If you guessed 16, you were right, the full decomposition is :
 </p></details>
 
 Working on this case, the first rule we realize is that splitting along spaces will not work (and should not work) as, for example, `VAR A=169` has a valid syntax.
-We can breakup "tokenizing" into these 5 rules :
+We can breakup "tokenizing" into these 6 rules :
 
 * A word is starting with a letter and can contains letters, numbers and underscores, like built-in commands `WHILE`, `IF` or variable names `myAwesomeVar_12`.
 * A list of symbols are acting as separators like `(` or `+`.
 * Some symbols must be merged together like `&&` or `>=`.
-* Numbers are digits and can have a floating point or a leading sign like `-2.03`.
+* Numbers are digits and can have a floating point like `2.03`.
+* Numbers and variables can have a leading leading sign like `-2` or `-varA`.
 * Spaces are meaningful expect between 2 words: we can shrink `A +` but not `IF A`.
 
 Following these information, we can start writing our `tokenize` function that will split an instruction line into meaningful tokens.
+
+## Divide and conquer
+
+```javascript
+/**
+* split a string expression into tokens
+* @param {string} exp
+* @return {string[]} tokens
+*/
+function tokenize(exp){
+```
+
+So as we said before, there are 2 types of spaces: between words and others.
+We need to differentiate both by changing the first temporarily.
+We can also declare an output list and a variable keeping the first index of a word.
+
+```javascript
+//save the space between 2 a-z words by replacing it with ¤ and ditch other blank spaces
+const exp2 = exp.replace(/([a-zA-Z0-9_]*)[\\s]([a-zA-Z0-9_]*)/g, '$1¤$2')
+                .replace(/[\\s]/g,'') // remove blank chars
+                .replace(/¤/g,' '); // recover saved space
+const output = []; // saved tokens
+let i0 = 0; // start of a word
+```
+
+We will now iterate over each characters the following way :
+
+<small>
+
+```
+    VAR var2=169
+        ^             start of word at i0=4
+    VAR var2=169
+        |^            letter of a word
+    VAR var2=169
+        | ^           letter of a word
+    VAR var2=169
+        |  ^          letter of a word
+    VAR var2=169
+        |   ^         new word 'var2' starting at i0=4
+```
+
+</small>
+
+So a `for` loop is perfect for this task
+
+```javascript
+for (let i = 0; i < exp2.length; i++) {
+```
+
+# TODO
+
+<details><summary>Full `tokenize` function (click)</summary><p>
+
+```javascript
+
+/**
+* split a string expression into tokens
+* @param {string} exp
+* @return {string[]} tokens
+*/
+function tokenize(exp){
+  //save the space between 2 a-z words by replacing it with ¤ and ditch other blank spaces
+  const exp2 = exp.replace(/([a-zA-Z0-9_]*)[\\s]([a-zA-Z0-9_]*)/g, '$1¤$2')
+                  .replace(/[\\s]/g,'')
+                  .replace(/¤/g,' ');
+  const output = []; // saved tokens
+  let i0 = 0; // start of a word
+  for (let i = 0; i < exp2.length; i++) {
+    if ('+-*/%^,()=&| ><!'.includes(exp2[i])) { // if current char is separator
+      if (i > i0) // save token before
+        output.push(exp2.substr(i0, i - i0).trim());
+      if (exp2[i] !== ' ') // save separator as token if not word separator
+        output.push(exp2[i]);
+      i0 = i + 1;
+    }
+  }
+  if (i > i0) // save last token
+    output.push(exp2.substr(i0, i - i0).trim());
+  
+  const testMerge = function(a,b){
+    return ('&|='.includes(a) && a.length === 1 && a === b) || // double separator
+      (b === '=' && '!<>'.includes(a) && a.length === 1);// >= or <= or !=
+  };
+
+  // join two separators of same char in output
+  for (let i = output.length - 1; i > 0; i--) {
+    if (testMerge(output[i - 1], output[i])) {
+      output[i - 1] += output[i];
+      output.splice(i, 1);
+    } else if ('+-*/%^=&|><(,!'.includes(output[i - 1]) && output[i] === '-') {
+      output[i] = '.-';
+    }
+  }
+  return output;
+}
+
+```
+
+</p></details>
