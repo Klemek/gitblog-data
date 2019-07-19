@@ -112,13 +112,13 @@ for (let i = 0; i < exp2.length; i++) {
 */
 function tokenize(exp){
   //save the space between 2 a-z words by replacing it with ¤ and ditch other blank spaces
-  const exp2 = exp.replace(/([a-zA-Z0-9_]*)[\\s]([a-zA-Z0-9_]*)/g, '$1¤$2')
+  const exp2 = exp.replace(/([a-zA-Z0-9_]*)[\s]([a-zA-Z0-9_]*)/g, '$1¤$2')
                   .replace(/[\\s]/g,'')
                   .replace(/¤/g,' ');
   const output = []; // saved tokens
   let i0 = 0; // start of a word
   for (let i = 0; i < exp2.length; i++) {
-    if ('+-*/%^,()=&| ><!'.includes(exp2[i])) { // if current char is separator
+    if ('+-*/%^()=&| ><!'.includes(exp2[i])) { // if current char is separator
       if (i > i0) // save token before
         output.push(exp2.substr(i0, i - i0).trim());
       if (exp2[i] !== ' ') // save separator as token if not word separator
@@ -139,7 +139,7 @@ function tokenize(exp){
     if (testMerge(output[i - 1], output[i])) {
       output[i - 1] += output[i];
       output.splice(i, 1);
-    } else if ('+-*/%^=&|><(,!'.includes(output[i - 1]) && output[i] === '-') {
+    } else if ('+-*/%^=&|><(!'.includes(output[i - 1]) && output[i] === '-') {
       output[i] = '.-';
     }
   }
@@ -149,3 +149,59 @@ function tokenize(exp){
 ```
 
 </p></details>
+
+Testing:
+```javascript
+console.log(tokenize('VAR A = 169').join('  /  '));
+console.log(tokenize('WHILE var != var2 + 1 && var < (5.2 - var3) ^ -2').join('  /  '));
+```
+
+Console output from your browser:  
+> <span id="output"></span>
+
+<script>
+function log(...args){
+  console.log(...args);
+  document.getElementById('output').innerHTML += args.map(x => x.toString()).join(' ')+'<br>';
+}
+function tokenize(exp){
+  //save the space between 2 a-z words by replacing it with ¤ and ditch other blank spaces
+  const exp2 = exp.replace(/([a-zA-Z0-9_]*)[\s]([a-zA-Z0-9_]*)/g, '$1¤$2')
+                  .replace(/[\\s]/g,'')
+                  .replace(/¤/g,' ');
+  const output = []; // saved tokens
+  let i0 = 0; // start of a word
+  let i;
+  for (i = 0; i < exp2.length; i++) {
+    if ('+-*/%^()=&| ><!'.includes(exp2[i])) { // if current char is separator
+      if (i > i0) // save token before
+        output.push(exp2.substr(i0, i - i0).trim());
+      if (exp2[i] !== ' ') // save separator as token if not word separator
+        output.push(exp2[i]);
+      i0 = i + 1;
+    }
+  }
+  if (i > i0) // save last token
+    output.push(exp2.substr(i0, i - i0).trim());
+  
+  const testMerge = function(a,b){
+    return ('&|='.includes(a) && a.length === 1 && a === b) || // double separator
+      (b === '=' && '!<>'.includes(a) && a.length === 1);// >= or <= or !=
+  };
+
+  // join two separators of same char in output
+  for (let i = output.length - 1; i > 0; i--) {
+    if (testMerge(output[i - 1], output[i])) {
+      output[i - 1] += output[i];
+      output.splice(i, 1);
+    } else if ('+-*/%^=&|><(!'.includes(output[i - 1]) && output[i] === '-') {
+      output[i] = '.-';
+    }
+  }
+  return output;
+}
+
+log(tokenize('VAR A = 169').join('&nbsp;&nbsp;/&nbsp;&nbsp;'));
+log(tokenize('WHILE var != var2 + 1 && var < (5.2 - var3) ^ -2').join('&nbsp;&nbsp;/&nbsp;&nbsp;'));
+
+</script>
