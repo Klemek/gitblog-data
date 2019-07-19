@@ -187,3 +187,11 @@ div.article:active {
     color:#333;
     line-height: 1em;
 }
+
+.red {
+    color: #B71C1C;
+}
+
+.green {
+    color: #33691E;
+}
