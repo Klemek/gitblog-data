@@ -3,7 +3,7 @@
 ![thumbnail](thumbnail.jpg)
 *Vue.js minified code highlight on Webstorm*
 
-[![Hacker News](https://img.shields.io/badge/dynamic/json.svg?color=green&style=flat-square&label=Hacker%20News&query=score&suffix=%20points&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F20285234.json)](https://news.ycombinator.com/item?id=20285234) ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fblog.klemek.fr%2F2019%2F07%2F09%2F)
+[![Hacker News](https://img.shields.io/badge/dynamic/json.svg?color=green&style=flat-square&label=Hacker%20News&query=score&suffix=%20points&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F20498444.json)](https://news.ycombinator.com/item?id=20498444) ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fblog.klemek.fr%2F2019%2F07%2F09%2F)
 
 ***
 
@@ -90,4 +90,4 @@ I think we're good to go.
 
 See you next time for __[How to create a (slow) interpreter - Part 1: Tokens](/2019/07/22/how_to_create_a__slow__interpreter___part_1__tokens/)__.
 
-[![Comments](https://img.shields.io/badge/dynamic/json.svg?color=orange&style=for-the-badge&label=Comments&query=descendants&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F20285234.json)](https://news.ycombinator.com/item?id=20285234)
+[![Comments](https://img.shields.io/badge/dynamic/json.svg?color=orange&style=for-the-badge&label=Comments&query=descendants&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F20498444.json)](https://news.ycombinator.com/item?id=20498444)
