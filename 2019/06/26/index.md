@@ -4,6 +4,7 @@
 *Photo by [Matthieu Joannon](https://unsplash.com/@matt_j) on Unsplash*
 
 [![Hacker News](https://img.shields.io/badge/dynamic/json.svg?color=green&style=for-the-badge&label=Hacker%20News&query=score&suffix=%20points&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F20285234.json)](https://news.ycombinator.com/item?id=20285234)
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fblog.klemek.fr%2F2019%2F06%2F26%2F)
 
 ***
 
