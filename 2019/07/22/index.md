@@ -132,7 +132,7 @@ i0 = i + 1;
 }
 ```
 
-At the end of the loop, we mustn't forget to save the remaining token:
+At the end of the loop, let's not forget to save the remaining token:
 ```javascript
 }
 if (i > i0) // save last token
@@ -142,13 +142,13 @@ if (i > i0) // save last token
 Pretty easy, right? So where are we now?
 
 1. <i class="fas fa-check green"></i> words aren't containing symbols*.  
-1. <i class="fas fa-check green"></i> spaces are removed expect between words.  
+1. <i class="fas fa-check green"></i> spaces are removed except between words.  
 1. <i class="fas fa-check green"></i> symbols act as separators.  
 1. <i class="fas fa-check green"></i> numbers can contains points. (as `.` is not in the symbol list)  
 1. <i class="fas fa-times red"></i> symbols aren't merged. (`A!=B` became `A`, `!`, `=`, `B`)  
 1. <i class="fas fa-times red"></i> inverse operation is not separated from subtraction.
 
-> \* words might indeed contain symbols if there aren't in the separators list (like `@`) but we will check their validity another time.
+> \* words might actually contain symbols if there aren't in the separators list (like `@`) but we will check their validity another time.
 
 We now want to merge symbols when it's required. To do so, we will create a testing function that takes two neighbor tokens and check their merge ability:
 
