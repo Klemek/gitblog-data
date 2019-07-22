@@ -84,4 +84,4 @@ GCD(169, 585)
 
 I think we're good to go.
 
-See you next time for __[How to create a (slow) interpreter - Part 1: Tokens](/2019/07/22/how_to_create_a__slow__interpreter___part_1__tokens/)__ (soon).
+See you next time for __[How to create a (slow) interpreter - Part 1: Tokens](/2019/07/22/how_to_create_a__slow__interpreter___part_1__tokens/)__.
