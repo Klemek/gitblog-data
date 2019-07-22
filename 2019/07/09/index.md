@@ -3,6 +3,10 @@
 ![thumbnail](thumbnail.jpg)
 *Vue.js minified code highlight on Webstorm*
 
+[![Hacker News](https://img.shields.io/badge/dynamic/json.svg?color=green&style=flat-square&label=Hacker%20News&query=score&suffix=%20points&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F20285234.json)](https://news.ycombinator.com/item?id=20285234) ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fblog.klemek.fr%2F2019%2F07%2F09%2F)
+
+***
+
 Have you ever considered creating your own language ? With its own features and syntax ? If the answer is yes, maybe you should read another article where you can learn an efficient way of doing so. If you're here by curiosity, tighten your seatbelt and fetch a drink, we're going on a ride.
 
 ## How I got there
@@ -85,3 +89,5 @@ GCD(169, 585)
 I think we're good to go.
 
 See you next time for __[How to create a (slow) interpreter - Part 1: Tokens](/2019/07/22/how_to_create_a__slow__interpreter___part_1__tokens/)__.
+
+[![Comments](https://img.shields.io/badge/dynamic/json.svg?color=orange&style=for-the-badge&label=Comments&query=descendants&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F20285234.json)](https://news.ycombinator.com/item?id=20285234)
