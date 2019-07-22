@@ -42,7 +42,7 @@ Working on this case, the first rule we realize is that splitting along spaces w
 We can break up "tokenizing" into these 6 rules:
 
 1. A word is starting with a letter and can contain letters, numbers and underscores, like built-in commands `WHILE`, `IF` or variable names `myAwesomeVar_12`.
-1. Spaces are meaningful excepted between 2 words: we can shrink `A +` but not `IF A`.
+1. Spaces are meaningless excepted between 2 words: we can shrink `A +` but not `IF A`.
 1. Some symbols are acting as separators like `(` or `+`.
 1. Numbers are digits and can include a floating point like `2.03`.
 1. Some symbols must be merged together like `&&` or `>=`.
