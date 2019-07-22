@@ -3,6 +3,8 @@
 ![thumbnail](./thumbnail.jpg)
 *Photo by [Matthieu Joannon](https://unsplash.com/@matt_j) on Unsplash*
 
+[![Hacker News](https://img.shields.io/badge/dynamic/json.svg?color=green&style=for-the-badge&label=Hacker%20News&query=score&suffix=%20points&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F20285234.json)](https://news.ycombinator.com/item?id=20285234)
+
 ***
 
 As my daily navigation through [Hacker News](https://news.ycombinator.com) tends to increase,  I noticed that most developers don't rely on major blog services like Medium. Instead, they use other means to host their thoughts on their own website  and, as I was reading a lot articles on these types of platforms, I felt this questionable need to create my own.
@@ -67,5 +69,4 @@ I don't really care. I made it with a lot of configuration possibilities, so oth
 
 Anyway, I will use it personally as mentioned earlier and I hope to count you as my few yet meaningful readers.
 
-[![Hacker News](https://img.shields.io/badge/dynamic/json.svg?color=green&style=for-the-badge&label=Hacker%20News&query=score&suffix=%20points&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F20285234.json)](https://news.ycombinator.com/item?id=20285234)
 [![Comments](https://img.shields.io/badge/dynamic/json.svg?color=orange&style=for-the-badge&label=Comments&query=descendants&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F20285234.json)](https://news.ycombinator.com/item?id=20285234)
