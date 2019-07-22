@@ -5,7 +5,7 @@
 
 Have you ever considered creating your own language ? With its own features and syntax ? If the answer is yes, maybe you should read another article where you can learn an efficient way of doing so. If you're here by curiosity, tighten your seatbelt and fetch a drink, we're going on a ride.
 
-## How I got here
+## How I got there
 
 Several months ago, I was on this project named **Red Pineapple** with some friends where we had to make a choice between these 3 options:
 * Make a full [scratch-like interface](https://en.wikipedia.org/wiki/Scratch_(programming_language)) to allow programming with building blocks.
