@@ -3,6 +3,8 @@
 ![thumbnail](thumbnail.jpg)
 *Photo by [Andreas Brücker](https://unsplash.com/@andreasbruecker) on Unsplash*
 
+***
+
 Before reading this article, I strongly recommend you to read __[How to create a (slow) interpreter - Introduction](/2019/07/09/how_to_create_a__slow__interpreter___introduction/)__.
 
 Last time, we had a simple syntax to our language, it's now time to get our hands dirty and start writing some code.  
