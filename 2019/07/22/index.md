@@ -3,6 +3,8 @@
 ![thumbnail](thumbnail.jpg)
 *Photo by [Andreas Brücker](https://unsplash.com/@andreasbruecker) on Unsplash*
 
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fblog.klemek.fr%2F2019%2F07%2F22%2F)
+
 ***
 
 Before reading this article, I strongly recommend you to read __[How to create a (slow) interpreter - Introduction](/2019/07/09/how_to_create_a__slow__interpreter___introduction/)__.
