@@ -150,7 +150,7 @@ Pretty easy, right? So where are we now?
 
 > \* words might actually contain symbols if there aren't in the separators list (like `@`) but we will check their validity another time.
 
-We now want to merge symbols when it's required. To do so, we will create a testing function that takes two neighbor tokens and check their merge ability:
+We now want to merge symbols when it's required. To do so, we will create a testing function that takes two neighbor tokens and checks their merge ability:
 
 ```javascript
 const canMerge = function(a,b){
