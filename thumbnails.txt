@@ -1,0 +1,6 @@
+image: 1800*660
+bg: gaussian blur
+guides: h 50% v 30% 50% 70%
+icons: max 235*235
+
++ optimize jpeg
