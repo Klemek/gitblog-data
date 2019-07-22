@@ -66,3 +66,6 @@ All of it running on a small yet powerful NodeJS server.
 I don't really care. I made it with a lot of configuration possibilities, so others might want to use it for its simplicity. You may want to tell me its design is not that eye-catching yet it's only a reflect of my own need of minimalism (and lack of designing skills). You can imagine a full bootstrapped version with animations and stuff and it would be totally doable with this project.
 
 Anyway, I will use it personally as mentioned earlier and I hope to count you as my few yet meaningful readers.
+
+[![Hacker News](https://img.shields.io/badge/dynamic/json.svg?color=green&style=for-the-badge&label=Hacker%20News&query=score&suffix=%20points&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F20285234.json)
+![Comments](https://img.shields.io/badge/dynamic/json.svg?color=orange&style=for-the-badge&label=Comments&query=descendants&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F20285234.json)](https://news.ycombinator.com/item?id=20285234)
