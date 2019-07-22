@@ -1,13 +1,13 @@
 # How to create a (slow) interpreter - Part 1: Tokens
 
 ![thumbnail](thumbnail.jpg)
-*Vue.js minified code highlight on Webstorm*
+*Photo by [Andreas Brücker](https://unsplash.com/@andreasbruecker) on Unsplash*
 
 Before reading this article, I strongly recommend you to read __[How to create a (slow) interpreter - Introduction](/2019/07/09/how_to_create_a__slow__interpreter___introduction/)__.
 
 Last time, we had a simple syntax to our language, it's now time to get our hands dirty and start writing some code.  
 
-## Now you're thinking with tokens
+## Divide and conquer
 
 First we need to think about what our interpreter needs to compute.
 As an input, we will feed it a text containing the code and as an output it will either return a list of errors or a text output.
@@ -52,7 +52,7 @@ We can breakup "tokenizing" into these 6 rules:
 
 Following these information, we can start writing our `tokenize` function that will split an instruction line into meaningful tokens.
 
-## Divide and conquer
+## Now you're thinking with tokens
 
 ```javascript
 /**
@@ -185,6 +185,10 @@ return output;
 }
 ```
 
+## 
+
+We have now our fully working function:
+
 <details><summary>Full `tokenize` function (click)</summary><p>
 
 ```javascript
@@ -232,7 +236,7 @@ function tokenize(exp){
 
 </p></details>
 
-Let's test this out with the examples above:
+Let's test this out with the examples described above:
 ```javascript
 console.log(tokenize('VAR A = 169').join('  /  '));
 console.log(tokenize('WHILE var != var2 + 1 && var < (5.2 - var3) ^ -2').join('  /  '));
@@ -286,3 +290,7 @@ log(tokenize('VAR A = 169').join('  /  '));
 log(tokenize('WHILE var != var2 + 1 && var < (5.2 - var3) ^ -2').join('  /  '));
 
 </script>
+
+That's it, we can now move on to our next task in this adventure which is __How to create a (slow) interpreter - Part 2: Shunting Yard__ (soon) 
+
+See you next time!
