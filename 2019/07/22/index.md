@@ -44,9 +44,9 @@ We can break up "tokenizing" into these 6 rules:
 1. A word is starting with a letter and can contain letters, numbers and underscores, like built-in commands `WHILE`, `IF` or variable names `myAwesomeVar_12`.
 1. Spaces are meaningful expect between 2 words: we can shrink `A +` but not `IF A`.
 1. Some symbols are acting as separators like `(` or `+`.
-1. Numbers are digits and can have a floating point like `2.03`.
+1. Numbers are digits and can include a floating point like `2.03`.
 1. Some symbols must be merged together like `&&` or `>=`.
-1. Numbers and variables can have a leading leading sign like `-2` or `-varA`.*
+1. Numbers and variables can possess a leading leading sign like `-2` or `-varA`.*
 
 > \* The last one is special as we will handle this task here and it will only be used later in another function.
 
@@ -64,7 +64,7 @@ function tokenize(exp){
 ```
 
 So as we said before, there are 2 types of spaces: between words and others.
-We need to differentiate both by changing the first temporarily.
+We must differentiate both by changing the first temporarily.
 We can also declare an output list and a variable keeping the first index of a word.
 
 ```javascript
@@ -150,7 +150,7 @@ Pretty easy, right? So where are we now?
 
 > \* words might indeed contain symbols if there aren't in the separators list (like `@`) but we will check their validity another time.
 
-We now need to merge symbols when it's needed. To do so, we will create a testing function that takes two neighbor tokens and check their merge ability
+We now want to merge symbols when it's required. To do so, we will create a testing function that takes two neighbor tokens and check their merge ability:
 
 ```javascript
 const canMerge = function(a,b){
@@ -159,7 +159,7 @@ const canMerge = function(a,b){
 };
 ```
 
-We just have to iterate over our `output` list (in reverse to avoid index jumps) and merge whenever it's possible
+We only need to iterate over our `output` list (in reverse to avoid index jumps) and merge whenever it's possible:
 
 ```javascript
 for (let i = output.length - 1; i > 0; i--) {
@@ -167,7 +167,7 @@ for (let i = output.length - 1; i > 0; i--) {
     output.splice(i - 1, 2, output[i - 1] + output[i]); // remove 2 elements and add merged
 ```
 
-We will take this opportunity to iterate over the output to identify the inverse operation.
+We will take this opportunity to iterate over the output to identify the inverse operation:
 
 > Inverse operation is identified by a minus sign after a symbol except for closing parenthesis.
 For example, in `(A-B)-C*-D`, only the final one is different.
@@ -177,7 +177,7 @@ else if ('+-*/%^(=&| ><!'.includes(output[i - 1]) && output[i] === '-')
   output[i] = '.-'; // differentiate this operation from subtraction
 ```
 
-Now all the rules are fulfilled, we can return our output:
+Now all the rules are fulfilled, we can simply return our output:
 
 ```javascript
 }
@@ -187,7 +187,7 @@ return output;
 
 ## 
 
-We have now our fully working function:
+We can now enjoy our fully working function:
 
 <details><summary>Full `tokenize` function (click)</summary><p>
 
