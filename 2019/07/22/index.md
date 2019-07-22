@@ -119,7 +119,7 @@ for (i = 0; i < exp2.length; i++) {
   if ('+-*/%^()=&| ><!'.includes(exp2[i])) { // if current char is a separator
 ```
 
-Whenever it happens, the first thing is to save the previous token if it exists.  
+Whenever it happens, we first have to save the previous token if it exists.  
 Next we save the separator as a token when it's not a space between words.  
 Then we update the starting point of the following token.
 
@@ -132,7 +132,7 @@ i0 = i + 1;
 }
 ```
 
-At the end of the loop, we don't forget to save the remaining token:
+At the end of the loop, we mustn't forget to save the remaining token:
 ```javascript
 }
 if (i > i0) // save last token
