@@ -177,7 +177,7 @@ else if ('+-*/%^(=&| ><!'.includes(output[i - 1]) && output[i] === '-')
   output[i] = '.-'; // differentiate this operation from subtraction
 ```
 
-Now all the rules are fulfilled, we can simply return our output:
+Now that all the rules are fulfilled, we can simply return our output:
 
 ```javascript
 }
