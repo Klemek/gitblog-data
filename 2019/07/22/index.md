@@ -3,6 +3,7 @@
 ![thumbnail](thumbnail.jpg)
 *Photo by [Andreas Brücker](https://unsplash.com/@andreasbruecker) on Unsplash*
 
+[![Hacker News](https://img.shields.io/badge/dynamic/json.svg?color=green&style=flat-square&label=Hacker%20News&query=score&suffix=%20points&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F20515595.json)](https://news.ycombinator.com/item?id=20515595) 
 ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fblog.klemek.fr%2F2019%2F07%2F22%2F)
 
 ***
@@ -298,3 +299,5 @@ log(tokenize('WHILE var != var2 + 1 && var < (5.2 - var3) ^ -2').join('  /  '));
 That's it, we can now move on to our next task in this adventure which is __How to create a (slow) interpreter - Part 2: Shunting Yard__ (soon) 
 
 See you next time!
+
+[![Comments](https://img.shields.io/badge/dynamic/json.svg?color=orange&style=for-the-badge&label=Comments&query=descendants&url=https%3A%2F%2Fhacker-news.firebaseio.com%2Fv0%2Fitem%2F20498444.json)](https://news.ycombinator.com/item?id=20515595)
