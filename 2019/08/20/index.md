@@ -181,3 +181,7 @@ $$\left\{\begin{matrix}
 \end{matrix}\right.$$
 
 With this tool, you can gauge at the logs and finally tell "now's the time to get a coffee!"
+
+---
+
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fblog.klemek.fr%2F2019%2F08%2F20%2F)
