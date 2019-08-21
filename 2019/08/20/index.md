@@ -168,9 +168,9 @@ $$\color{DarkGreen}{R=(1-x_{2})\frac{T_{2}}{x_{2}}}$$
 
 You can use this formula as you want, but to get results quickly, you can get the mean of values calculated between the last point and every other point. Described like this ($k$ being the index of the last point):
 
-$$\mu =\frac{\sum_{i=0}^{k-1} \Delta K_{x_{i},x_{k}}}{2(k-1)}$$
+$$\mu =\frac{\sum_{i=0}^{k-1} \Delta K_{x_{i},x_{k}}}{k-1}$$
 
-$$R=(1-x_{k})(\frac{T_{k}}{x_{k}}+\mu)$$
+$$R=(1-x_{k})(\frac{T_{k}}{x_{k}}+\frac{\mu}{2})$$
 
 It will give you something like this:
 
