@@ -166,7 +166,12 @@ $$\color{DarkGreen}{R=(1-x_{2})\frac{T_{2}}{x_{2}}}$$
 
 > On real data, we have more than 2 points so how do we get the ETA from a set of points?
 
-You can use this formula as you want, but to get results quickly, you can get the mean of values calculated between the last point and every other point.
+You can use this formula as you want, but to get results quickly, you can get the mean of values calculated between the last point and every other point. Described like this ($k$ being the index of the last point):
+
+$$\mu =\frac{\sum_{i=0}^{k-1} \Delta K_{x_{i},x_{k}}}{2(k-1)}$$
+
+$$R=(1-x_{2})(\frac{T_{2}}{x_{2}}+\mu)$$
+
 It will give you something like this:
 
 ![](graph4.svg)
