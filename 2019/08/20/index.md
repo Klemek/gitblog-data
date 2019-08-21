@@ -170,7 +170,7 @@ You can use this formula as you want, but to get results quickly, you can get th
 
 $$\mu =\frac{\sum_{i=0}^{k-1} \Delta K_{x_{i},x_{k}}}{2(k-1)}$$
 
-$$R=(1-x_{2})(\frac{T_{2}}{x_{2}}+\mu)$$
+$$R=(1-x_{k})(\frac{T_{k}}{x_{k}}+\mu)$$
 
 It will give you something like this:
 
