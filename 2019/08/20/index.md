@@ -69,6 +69,8 @@ You understand quickly that, as the percentage goes, the time it takes increase 
 
 As you can see, the simple time indicator wasn't enough for this task.
 
+If you want, you can simply [go the end](#real-data) and skip all the fun.
+
 First, we need to acknowledge the shape of the time-cost function: a trapezoid.
 
 ## Area of a trapezoid function
