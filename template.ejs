@@ -6,7 +6,7 @@
 </head>
 <body>
 <main class="article">
-    <div class="header">
+    <div class="header" id="top">
         <a class="link-home" href="/">↑</a>
         <h1><%= article.title %></h1>
         <span class="time"><span><%= article.draft ? 'Drafted on' : 'Published on' %></span>&nbsp;&nbsp;<%= article.year + '-' + ('0' + article.month).slice(-2) + '-' + ('0' + article.day).slice(-2) %></span>
