@@ -23,7 +23,7 @@ So I got to work.
 
 ## Breakdown of the project
 
-**TODO: jump to end**
+Intrested in the result and not the process? You can [jump to the end](#results) if you're tired of reading.
 
 Discord has a wonderful native integration for bots which comes with an easy-to-use API in several languages. I already had a wrapper on the Python API that I called [miniscord](https://github.com/klemek/miniscord). This project allows a head start to make bots by simplifying the syntax. It comes with tools to help you register commands and handling them easily.
 
