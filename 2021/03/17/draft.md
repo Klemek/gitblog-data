@@ -40,3 +40,5 @@ Discord has a wonderful native integration for bots which comes with an easy-to-
 **TODO: links**
 
 **TODO: thanks**
+
+**TODO: final thoughts**
