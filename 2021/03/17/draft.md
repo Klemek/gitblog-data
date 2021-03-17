@@ -3,7 +3,7 @@
 **TODO: thumbnail**
 ![thumbnail](thumbnail.jpg)
 
-**TODO: TL;DR**
+*If you're thinking "Oh no, yet another blog post that will slowly unravel what could be said in 5 minutes", I got you covered: you can [skip to the end](#results) to see the results.*
 
 ## Introduction
 
