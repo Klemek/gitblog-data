@@ -15,4 +15,6 @@ While it's already superior to what can provide other platforms like Messenger, 
 
 So I got to work.
 
+Discord has a wonderful native integration for bots which comes with an easy-to-use API in several languages. I already had a wrapper on the Python discord.py API that I called [miniscord](https://github.com/klemek/miniscord). This project allows a head start to make bots by simplifying the syntax. It comes with tools to help you register commands and handling them easily.
+
 **TODO**
